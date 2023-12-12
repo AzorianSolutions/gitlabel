@@ -1,0 +1,5 @@
+___*
+.idea
+*.egg-info
+*.pyc
+venv
