@@ -6,7 +6,7 @@ from app.config import settings
 
 
 def get_labels(username: str, repository: str):
-    url = f"https://api.github.com/repos/{username}/{repository}/labels"
+    url = f"https://api.github.com/repos/{username}/{repository}/labels?per_page=100"
     headers = {
         "Authorization": f"Bearer {settings.github_access_token}",
         "Accept": "application/vnd.github.v3+json"
